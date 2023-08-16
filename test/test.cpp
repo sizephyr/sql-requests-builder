@@ -1,6 +1,5 @@
 #include <iostream>
 #include <cassert>
-#include <sstream>
 
 #include "sql.h"
 
