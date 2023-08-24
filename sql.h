@@ -592,6 +592,7 @@ namespace sql {
     {
     public:
         UpdateModel() {}
+        UpdateModel(std::string targetTable):SqlModel(targetTable) {}
         UpdateModel(SqlModel& other):SqlModel(other){}
         virtual ~UpdateModel() {}
 
@@ -659,6 +660,7 @@ namespace sql {
     {
     public:
         DeleteModel() {}
+        DeleteModel(std::string targetTable):SqlModel(targetTable) {}
         DeleteModel(SqlModel& other):SqlModel(other){}
         virtual ~DeleteModel() {}
 
